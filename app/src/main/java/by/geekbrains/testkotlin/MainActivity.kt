@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         initViews()
         helloButton.setOnClickListener {
             firstNameTextView.text = fullName.firstName
-            lastNameTextView.text = fullName.lastName
+            lastNameTextView.text = Person.getPerson().lastName
         }
     }
 
